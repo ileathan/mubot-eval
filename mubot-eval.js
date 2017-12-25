@@ -154,7 +154,7 @@ function processMessage(run, msg) {
       }
       let result = _eval(cmd, true);
       result = JSON.stringify(result, null, 2) || result || 'true';
-      msg.bot.brain.save();
+      msg.robot.brain.save();
       msg.send('# Result: ```' + result + '```');
     } else {
       cmd = cmd.replace(/^(module\.)?exports\s?=\s?/,'');
@@ -329,7 +329,7 @@ function processMessage(run, msg) {
       }
       else res = "Could not parse request."
     }
-    bot.brain.save();
+    msg.robot.brain.save();
 
     return msg.send(res || "No Command(s) found.")
   }

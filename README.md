@@ -11,6 +11,40 @@ There are 2 modes. One which is a fork of a hubot scripts package. and the other
 
   leathan: mubot `(()=>"With <3 from leat.io.")`
   Mubot: With <3 from leat.io.
+
+  leathan: mubot evals
+  Mubot: (2): `7+7`, `(()=>"With <3 from l..`
+
+  leathan: mubot run last
+  Mubot: With <3 from leat.io.
+
+  leathan: !!
+  Mubot: With <3 from leat.io.
+
+  leathan: !1
+  Mubot: 14
+
+  leathan: mubot delete all
+  Mubot: Deleted 2 logged evals and 0 saved evals.
+
+  leathan: !`'7' + '7'`
+  Mubot: 77
+
+  leathan: save 1 !two sevens
+  Mubot: `'7' + '7'` saved as "two sevens".
+
+  leathan: !two sevens
+  Mubot: 77
+
+  leathan: !delete 1
+  Mubot: Deleted 1 log eval.
+
+  leathan: mubot evals
+  Mubot: (0)
+
+  leathan: mubot evals saved
+  Mubot: (1) `'7' + '7'`
+  
 ```
 
 # Dependancies

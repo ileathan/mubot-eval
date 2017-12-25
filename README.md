@@ -1,7 +1,15 @@
 # mubot-eval
 Records and saves code evaluations from chatrooms. (Mubots eval command integration for Hubot.)
 
-There are 2 modes. One which is a fork of a hubot scripts package. and the other directly evaluates code against the live robot code. That is to say the in memory values are directly alterable and also system access equivilant to the bots process. *Do not* add power users that are not you or people you trust with full system access.
+# Features
+
+  1.) Use your normal Hubot/Mubots name or a quick trigger !.
+  2.) Allow a seperate list of tagged commands to be saved.
+  2.) Allow deleted both tagged and logged evals seperatly.
+  3.) Allow replaying saved commands by tag or index.
+  4.) Super user mode.
+
+There are 2 modes. One which is a fork of a hubot scripts package and runs in a full sandbox, to allow module requires you must define them manually. and the other directly evaluates code against the live robot code. That is to say the in memory values are directly alterable and also system access equivilant to the bots process. *Do not* add power users that are not you or people you trust with full system access. I will in the future add a third mode which sandboxes the user within the bot itself.
 
 # Usage
 
